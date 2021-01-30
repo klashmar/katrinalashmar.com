@@ -84,6 +84,17 @@ small,
 }
 
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background: hotpink;
+    border-bottom: 4px solid black;
+    color: yellowgreen;
+}
+
+
 /* Layout Styles */
 
 /*header */
@@ -92,6 +103,7 @@ small,
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
+    padding: 2em;
 }
 
 .wrapper {
@@ -100,19 +112,48 @@ small,
     min-height: 100vh;
 }
 
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    background: yellowgreen;
+}
+
+
+
 .nav-item {
-    bottom: 5%;
     background: none;
     color: white;
     border: none;
 }
 
+
+.hero-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.social {
+    display: flex;
+    flex-direction: row;
+    background: yellowgreen;
+    width: 5em;
+    justify-content: space-around;
+}
+
+/*
 .branding {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-}
+}*/
 
 /* hero */
 
