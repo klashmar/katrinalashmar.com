@@ -89,7 +89,9 @@ small,
 /*header */
 .header {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .wrapper {
@@ -101,8 +103,15 @@ small,
 .nav-item {
     bottom: 5%;
     background: none;
-    color: black;
+    color: white;
     border: none;
+}
+
+.branding {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 
 /* hero */
