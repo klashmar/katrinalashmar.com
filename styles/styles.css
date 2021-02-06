@@ -244,14 +244,18 @@ a:hover {
     float: left;
 }
 
-#project-01,
-#project-02 {
+.project-image {
     width: 100%;
     margin: 0;
     padding: 0;
     display: block;
     float: left;
     flex: 0 0 auto;
+    filter: grayscale(100)
+}
+
+.project-image:hover {
+    filter: grayscale(0%)
 }
 
 .footer {
