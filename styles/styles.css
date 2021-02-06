@@ -244,13 +244,6 @@ a:hover {
     float: left;
 }
 
-#project-01 {
-    transition: filter .1s linear;
-    -webkit-transition: filter .1s linear;
-    -moz-transition: filter .1s linear;
-}
-}
-
 #project-01,
 #project-02 {
     width: 100%;
