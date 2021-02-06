@@ -14,7 +14,7 @@ html {
 
 
 html {
-    font-size: 100%;
+    font-size: 70%;
     /*16px*/
 }
 
@@ -22,6 +22,7 @@ body {
     font-family: 'Poppins';
     font-weight: 400;
     line-height: 1.75;
+    background: black;
 }
 
 
@@ -37,6 +38,7 @@ img {
 
 p {
     margin-bottom: 1rem;
+    color: white;
 }
 
 h1,
@@ -53,8 +55,8 @@ h6 {
 
 h1 {
     margin-top: 0;
-    font-size: 3.052rem;
-    color: cornsilk;
+    font-size: 2.7rem;
+    color: white;
 }
 
 h2 {
@@ -69,10 +71,14 @@ h3 {
 
 h4 {
     font-size: 1.563rem;
+    color: white;
 }
 
 h5 {
     font-size: 1.25rem;
+    margin: 0rem;
+    margin-bottom: 1.38rem;
+    color: white;
 }
 
 h6 {
@@ -105,7 +111,7 @@ a:hover {
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
-    padding: 2em;
+    padding: 1.5rem 3rem;
 }
 
 .wrapper {
@@ -121,14 +127,21 @@ a:hover {
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    background: yellowgreen;
+    background: black;
 }
 
 
 
 .nav-item {
-    background: none;
+    background: black;
     border: none;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+#logo {
+    max-width: 10vw;
 }
 
 
@@ -143,8 +156,7 @@ a:hover {
 .social {
     display: flex;
     flex-direction: row;
-    background: yellowgreen;
-    width: 5em;
+    width: 4em;
     justify-content: space-around;
 }
 
@@ -159,8 +171,10 @@ a:hover {
 /* hero */
 
 .hero {
-    background: Hotpink;
-    min-height: 100vh;
+    background: black;
+    color: white;
+    margin: 2em;
+    min-height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,30 +183,86 @@ a:hover {
 }
 
 .hero-text {
-    padding: 4em;
+    padding: 4em 2em;
+    padding-top: 3em;
     text-align: center;
-    background: pink;
+    background: black;
 }
+
+.marquee {
+    width: 100%;
+    height: 3em;
+    background: black;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee div {
+    display: block;
+    width: 200%;
+    background: black;
+
+    position: absolute;
+    overflow: hidden;
+
+    animation: marquee 15s linear infinite;
+}
+
+.marquee {
+    display: flex;
+}
+
+.marquee span {
+    width: 50%;
+    font-size: 1.563em;
+}
+
+@keyframes marquee {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
 
 .project-container {
-    background: white;
-    min-height: 100vh;
-    margin: 2rem;
-}
-
-.project-list {
+    background: black;
+    margin: 3rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
 }
 
+.project-list {}
+
 .project-item {
-    margin: 1em;
-    max-width: 500px;
+    width: 100%;
+    display: flex;
+    float: left;
+}
+
+#project-01 {
+    transition: filter .1s linear;
+    -webkit-transition: filter .1s linear;
+    -moz-transition: filter .1s linear;
+}
+}
+
+#project-01,
+#project-02 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: left;
+    flex: 0 0 auto;
 }
 
 .footer {
-    background: orangered;
+    background: black;
     min-height: 25vh;
     padding: 2em
 }
@@ -201,9 +271,18 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    color: white;
 }
 
-.footer-item {}
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-info {}
+
+.footer-nav {}
 
 
 /* holding page styles */
@@ -486,32 +565,73 @@ holding-text {
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
     body {
-        background: lightblue;
-    }
-
-    .hero {
-        padding: 3em;
-
-    }
-
-    .hero-text {
-        padding: 4em;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    body {
         background: black;
         flex-direction: row;
+    }
+
+    .project-item {
+        width: 50%;
+        display: flex;
+        float: left;
+    }
+
+    .illustration-item {
+        width: 40%;
+        display: flex;
+        float: left;
+        align-items: center;
+        margin: 1em;
+    }
+
+    .project-text {
+        padding: 2em;
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    #melancholy-text {
+        min-width: 100%;
+    }
+
+    html {
+        font-size: 100%;
+        /*16px*/
+    }
+
+    h1 {
+        margin-top: 0;
+        font-size: 3.052rem;
+        color: white;
+    }
+
+    h2 {
+        font-size: 2.441rem;
+
+
+    }
+
+    h3 {
+        font-size: 1.953rem;
+    }
+
+    h4 {
+        font-size: 1.563rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+        margin: 0rem;
+        margin-bottom: 1.38rem;
+        color: white;
+    }
+
+    h6 {
+        font-size: .75rem;
+    }
+
+    small,
+    .text_small {
+        font-size: 0.8rem;
     }
 }
