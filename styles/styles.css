@@ -97,9 +97,7 @@ a {
 }
 
 a:hover {
-    background: hotpink;
-    border-bottom: 4px solid black;
-    color: yellowgreen;
+    color: orangered;
 }
 
 
