@@ -189,42 +189,28 @@ a:hover {
     background: black;
 }
 
-.marquee {
-    width: 100%;
-    height: 3em;
-    background: black;
-    overflow: hidden;
-    position: relative;
+.ticker li {
+    font-size: 1.5em;
+    color: white;
+    width: 16rem !important;
+    margin: 1rem;
 }
 
-.marquee div {
-    display: block;
-    width: 200%;
-    background: black;
 
-    position: absolute;
-    overflow: hidden;
-
-    animation: marquee 15s linear infinite;
-}
-
-.marquee {
-    display: flex;
-}
-
-.marquee span {
-    width: 50%;
-    font-size: 1.563em;
-}
-
-@keyframes marquee {
+@keyframes ticker {
     0% {
-        left: 100%;
+        transform: translate3d(0, 0, 0);
     }
 
     100% {
-        left: -100%;
+        transform: translate3d(-108rem, 0, 0);
     }
+}
+
+.ticker {
+    animation: ticker 18s linear infinite;
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -242,20 +228,25 @@ a:hover {
     width: 100%;
     display: flex;
     float: left;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100)
 }
 
 .project-image {
     width: 100%;
     margin: 0;
     padding: 0;
-    display: block;
-    float: left;
-    flex: 0 0 auto;
-    filter: grayscale(100)
 }
 
-.project-image:hover {
+.project-item:hover {
     filter: grayscale(0%)
+}
+
+.project-item-text {
+    position: absolute;
+    padding: 1em;
+    color: white;
 }
 
 .footer {
