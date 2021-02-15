@@ -98,7 +98,6 @@ a {
 
 a:hover {
     color: #BF6FA5;
-    background: white;
 }
 
 
@@ -269,6 +268,27 @@ a:hover {
 .contact-info {}
 
 .footer-nav {}
+
+
+/*project page styles */
+
+
+
+.illustration-item {
+    width: 100%;
+    display: flex;
+    float: left;
+    align-items: center;
+    margin: 1em;
+}
+
+.project-text {
+    padding: 2em;
+    padding-top: 2em;
+    display: flex;
+    align-items: center;
+}
+
 
 
 /* holding page styles */
@@ -548,36 +568,28 @@ holding-text {
 
 
 
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {
+/* Medium devices (tablets, 800px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 800px) {
     body {
         background: black;
         flex-direction: row;
     }
 
     .project-item {
-        width: 50%;
+        width: 100%;
         display: flex;
         float: left;
     }
 
     .illustration-item {
         width: 40%;
-        display: flex;
-        float: left;
-        align-items: center;
-        margin: 1em;
     }
 
     .project-text {
         padding: 2em;
-        padding-top: 0;
+        padding-top: 2em;
         display: flex;
         align-items: center;
-    }
-
-    #melancholy-text {
-        min-width: 100%;
     }
 
     html {
