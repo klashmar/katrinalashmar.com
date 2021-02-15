@@ -140,7 +140,7 @@ a:hover {
 }
 
 #logo {
-    max-width: 20vw;
+    max-width: 10vw;
 }
 
 
@@ -553,11 +553,6 @@ holding-text {
     body {
         background: black;
         flex-direction: row;
-    }
-
-    /* nav */
-    #logo {
-        max-width: 10vw;
     }
 
     .project-item {
