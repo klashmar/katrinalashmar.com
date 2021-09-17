@@ -25,6 +25,9 @@ body {
     background: black;
 }
 
+svg {
+    width: 200px;
+}
 
 /* Responsive images */
 img {
