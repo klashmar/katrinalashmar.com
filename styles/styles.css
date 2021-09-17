@@ -25,9 +25,7 @@ body {
     background: black;
 }
 
-svg {
-    width: 200px;
-}
+
 
 /* Responsive images */
 img {
@@ -133,16 +131,17 @@ a:hover {
 
 
 
-.nav-item {
+/* .nav-item {
     background: black;
     border: none;
     display: flex;
     flex-direction: row;
     align-self: center;
-}
+} */
 
 #logo {
-    max-width: 20vw;
+    min-width: 20vw;
+    max-width: 40vw;
 }
 
 
