@@ -22,7 +22,11 @@ body {
     font-family: 'Poppins';
     font-weight: 400;
     line-height: 1.75;
-    background: black;
+    background: #200122;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+
 }
 
 
@@ -98,7 +102,7 @@ a {
 }
 
 a:hover {
-    color: #BF6FA5;
+    color: #F09797;
 }
 
 
@@ -111,6 +115,7 @@ a:hover {
     flex-direction: row;
     justify-content: space-around;
     padding: 1.5rem 3rem;
+
 }
 
 .wrapper {
@@ -126,7 +131,7 @@ a:hover {
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    background: black;
+
 }
 
 
@@ -171,9 +176,9 @@ a:hover {
 /* hero */
 
 .hero {
-    background: black;
+
     color: white;
-    margin: 2em;
+    padding: 2em;
     min-height: 30vh;
     display: flex;
     flex-direction: column;
@@ -186,7 +191,6 @@ a:hover {
     padding: 4em 2em;
     padding-top: 3em;
     text-align: center;
-    background: black;
 }
 
 .ticker li {
@@ -215,11 +219,11 @@ a:hover {
 
 
 .project-container {
-    background: black;
-    margin: 3rem;
+
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    padding:2rem;
 }
 
 .project-list {}
@@ -249,9 +253,8 @@ a:hover {
 }
 
 .footer {
-    background: black;
     min-height: 25vh;
-    padding: 2em
+    padding: 2em;
 }
 
 .footer-list {
@@ -278,8 +281,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background: black;
+    justify-content: center;   
 }
 
 holding-text {
@@ -552,7 +554,7 @@ holding-text {
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
     body {
-        background: black;
+
         flex-direction: row;
     }
 
