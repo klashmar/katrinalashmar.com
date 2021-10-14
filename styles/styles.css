@@ -22,9 +22,12 @@ body {
     font-family: 'Poppins';
     font-weight: 400;
     line-height: 1.75;
-    background: #200122;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #200122;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6f0000, #200122);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6f0000, #200122);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     ;
 
 }
@@ -210,23 +213,64 @@ a:hover {
 }
 
 
-.project-container {
-
+/* .project-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding:2rem;
+    padding: 2rem;
+} */
+
+
+.project-list {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "project-1 ."
+        "project-1 ."
+        "project-1 project-2"
+        ". project-2"
+        "project-3 project-2"
+        "project-3 ."
+        "project-3 project-4"
+        ". project-4"
+        "project-5 project-4"
+        "project-5 ."
+        "project-5 .";
+}
+
+.project-1 {
+    grid-area: project-1;
+}
+
+.project-2 {
+    grid-area: project-2;
+}
+
+.project-3 {
+    grid-area: project-3;
+}
+
+.project-4 {
+    grid-area: project-4;
+}
+
+.project-5 {
+    grid-area: project-5;
 }
 
 
-.project-item {
+
+/* .project-item {
     width: 100%;
     display: flex;
     float: left;
     justify-content: center;
     align-items: center;
     filter: grayscale(100)
-}
+} */
 
 .project-image {
     width: 100%;
@@ -272,9 +316,10 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
 }
 
+/* Has to be .holding-text or #holding-text */
 holding-text {
     padding: 4em;
 }
@@ -540,20 +585,63 @@ holding-text {
 
 
 
-
+/* LARGE SCREENS */
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-    body {
-
+    /* body {
         flex-direction: row;
+    } */
+
+    /* .project-item {
+            width: 50%;
+            display: flex;
+            float: left;
+        } */
+
+    .project-list {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "project-1 ."
+            "project-1 ."
+            "project-1 project-2"
+            ". project-2"
+            "project-3 project-2"
+            "project-3 ."
+            "project-3 project-4"
+            ". project-4"
+            "project-5 project-4"
+            "project-5 ."
+            "project-5 .";
     }
 
-    .project-item {
-        width: 50%;
-        display: flex;
-        float: left;
+    .project-1 {
+        grid-area: project-1;
     }
+
+    .project-2 {
+        grid-area: project-2;
+    }
+
+    .project-3 {
+        grid-area: project-3;
+    }
+
+    .project-4 {
+        grid-area: project-4;
+    }
+
+    .project-5 {
+        grid-area: project-5;
+    }
+
+
+
+
 
     .illustration-item {
         width: 40%;
