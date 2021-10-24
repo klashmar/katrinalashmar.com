@@ -117,7 +117,7 @@ a:hover {
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
-    padding: 1.5rem 3rem;
+    padding: 1rem;
 
 }
 
@@ -148,7 +148,7 @@ a:hover {
 } */
 
 #logo {
-    min-width: 20vw;
+    min-width: 12vw;
     max-width: 40vw;
 }
 
@@ -276,9 +276,10 @@ a:hover {
     width: 100%;
     margin: 0;
     padding: 2em;
+    filter: grayscale(100)
 }
 
-.project-item:hover {
+.project-image:hover {
     filter: grayscale(0%)
 }
 
