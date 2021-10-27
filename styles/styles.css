@@ -224,21 +224,15 @@ a:hover {
 .project-list {
     display: grid;
     grid-auto-columns: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-        "project-1 ."
-        "project-1 ."
-        "project-1 project-2"
-        ". project-2"
-        "project-3 project-2"
-        "project-3 ."
-        "project-3 project-4"
-        ". project-4"
-        "project-5 project-4"
-        "project-5 ."
-        "project-5 .";
+        "project-1"
+        "project-2"
+        "project-3"
+        "project-4"
+        "project-5";
 }
 
 .project-1 {
