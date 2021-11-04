@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400');
 @import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500&display=swap');
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -19,17 +21,10 @@ html {
 }
 
 body {
-    font-family: 'Poppins';
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
     font-weight: 400;
     line-height: 1.75;
-    background: #200122;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #6f0000, #200122);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6f0000, #200122);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    ;
-
+    background: #151414;
 }
 
 
@@ -47,6 +42,8 @@ img {
 p {
     margin-bottom: 1rem;
     color: white;
+    font-weight: 300;
+    line-height: 1.3;
 }
 
 h1,
@@ -56,8 +53,8 @@ h4,
 h5,
 h6 {
     margin: 3rem 0 1.38rem;
-    font-family: 'Poppins';
-    font-weight: 400;
+   font-family: 'Zen Kaku Gothic Antique', sans-serif;;
+    font-weight: 500;
     line-height: 1.3;
 }
 
@@ -69,17 +66,23 @@ h1 {
 
 h2 {
     font-size: 2.441rem;
-
+    margin:0rem;
+    margin-bottom: 0.5rem;
 
 }
 
 h3 {
     font-size: 1.953rem;
+    margin:0rem;
+    margin-bottom: 0.5rem;
 }
 
 h4 {
     font-size: 1.563rem;
     color: white;
+}
+h4:hover{
+    color:violet
 }
 
 h5 {
@@ -101,11 +104,11 @@ small,
 
 a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: white;
 }
 
 a:hover {
-    color: #F09797;
+    color: violet;
 }
 
 
@@ -117,7 +120,7 @@ a:hover {
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
-    padding: 1rem;
+    padding: 2rem;
 
 }
 
@@ -148,7 +151,7 @@ a:hover {
 } */
 
 #logo {
-    min-width: 12vw;
+    min-width: 10vw;
     max-width: 40vw;
 }
 
@@ -156,8 +159,9 @@ a:hover {
 .social {
     display: flex;
     flex-direction: row;
-    width: 6em;
+    width: 4.5em;
     justify-content: space-around;
+    align-items: center;
 }
 
 /*
@@ -183,9 +187,8 @@ a:hover {
 }
 
 .hero-text {
-    padding: 4em 2em;
-    padding-top: 3em;
-    text-align: center;
+    padding:2em;
+    color: white;
 }
 
 .ticker li {
@@ -213,19 +216,15 @@ a:hover {
 }
 
 
-/* .project-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 2rem;
-} */
-
+.project-container {
+padding: 2rem;
+}
 
 .project-list {
     display: grid;
     grid-auto-columns: 1fr;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
         "project-1"
@@ -256,7 +255,12 @@ a:hover {
 }
 
 
-
+.project-page-list {
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    align-content:space-between;
+}
 /* .project-item {
     width: 100%;
     display: flex;
@@ -267,10 +271,8 @@ a:hover {
 } */
 
 .project-image {
-    width: 100%;
-    margin: 0;
-    padding: 2em;
-    filter: grayscale(100)
+    filter: grayscale(100);
+    border: solid white 2px;
 }
 
 .project-image:hover {
@@ -279,6 +281,38 @@ a:hover {
 
 .project-item-text {
     position: absolute;
+    color: white;
+}
+.figure {
+    padding: 0px;
+    margin:0px;
+}
+.figcaption{
+    color:white;
+    padding: 0px;
+    margin:0px;
+
+}
+.project-title {
+    box-sizing: content-box;
+    border: solid white 2px;
+    border-top:0px;
+    padding: 8px;
+    margin:0px;
+}
+.project-title::before{
+
+}
+.project-title::after{
+    content: url(images/icon/arrow-white.svg);
+}
+.categories-list{
+    box-sizing: content-box;
+    border: solid white 2px;
+    border-top:0px;
+    padding: 8px;
+}
+.category{
     color: white;
 }
 
@@ -299,10 +333,6 @@ a:hover {
     flex-direction: column;
     justify-content: space-between;
 }
-
-.contact-info {}
-
-.footer-nav {}
 
 
 /* holding page styles */
@@ -424,7 +454,7 @@ holding-text {
     bottom: 0;
     left: 0;
     color: white;
-    background: black;
+    background:#151414;
     overflow: hidden;
     clip: rect(0, 900px, 0, 0);
     animation: noise-anim 2s infinite linear alternate-reverse;
@@ -525,7 +555,7 @@ holding-text {
     bottom: 0;
     left: -2px;
     color: white;
-    background: black;
+    background: #151414;
     overflow: hidden;
     clip: rect(0, 900px, 0, 0);
     animation: noise-anim-2 3s infinite linear alternate-reverse;
@@ -599,7 +629,7 @@ holding-text {
         grid-auto-columns: 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 0px 0px;
+        gap: 0rem 3rem;
         grid-template-areas:
             "project-1 ."
             "project-1 ."
@@ -613,8 +643,8 @@ holding-text {
             "project-5 ."
             "project-5 .";
     }
-
-    .project-1 {
+    
+      .project-1 {
         grid-area: project-1;
     }
 
