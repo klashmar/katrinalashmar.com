@@ -23,7 +23,6 @@ body {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     max-width: 100%;
     overflow-x: hidden;
-    position: absolute;
     margin: 2rem;
     font-weight: 300;
     line-height: 1.75rem;
@@ -174,7 +173,6 @@ a:hover {
 /* hero */
 
 .hero {
-
     color: white;
     padding: 3em;
     padding-top: 0px;
@@ -206,12 +204,14 @@ a:hover {
     }
 
     100% {
-        transform: translate3d(-10rem, 0, 0);
+        transform: translate3d(-108rem, 0, 0);
     }
 }
 
 .ticker {
     animation: ticker 18s linear infinite;
+    overflow-x: hidden !important;
+    width:100% !important;
     display: flex;
     flex-direction: row;
     padding-top: 1rem;
