@@ -788,6 +788,10 @@ holding-text {
         flex:1;
         
     }
+    .project-item-image-alt {
+        flex:2;
+        
+    }
    .project-paragraph {
        list-style-type:none;
        padding-bottom:1rem;
