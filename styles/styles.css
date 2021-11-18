@@ -25,10 +25,10 @@ body {
     overflow-x: hidden;
     margin: 2rem;
     font-weight: 300;
+    font-size: 1.4rem;
     line-height: 1.75rem;
     background: #151414;
     color: white;
-    line-height: 1.5rem;
     cursor: url(images/icon/diamond-white.png), auto;
 
 }
@@ -49,20 +49,20 @@ img {
 p {
     color: white;
     font-weight: 300;
-    line-height: 1.4rem;
+    font-size: 1.4rem;
+    line-height: 1.75rem;
 }
 
 h1 {
     font-weight: 500;
-    font-size: 2.3rem;
-    line-height: 4rem;
+    font-size: 4.5rem;
+    line-height: 6rem;
     color: white;
 }
 
 h2 {
     font-size: 2.441rem;
-
-    margin-bottom: 0.5rem;
+margin-bottom: 0.5rem;
 
 }
 
@@ -73,7 +73,7 @@ h3 {
 
 h4 {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: white;
 }
 
@@ -83,16 +83,18 @@ h4:hover {
 
 h5 {
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
     margin-bottom: 1rem;
     color: white;
 }
 
 h6 {
     font-weight: 500;
-    font-size: 0.75rem;
+    font-size: 1.4rem;
     color: white;
-    line-height: 1.3rem;
+    line-height: 1.75rem;
+    margin-top: 2rem;
 }
 
 small,
@@ -375,6 +377,26 @@ padding: 2rem;
 
 .portfolio-image {
     margin-top: 1rem;
+}
+
+.project-page-container {
+    margin-top: 0rem;
+}
+
+.project-header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.project-item-image {
+    flex: 1;
+    margin-top: 2rem;
+
+}
+
+.project-paragraph {
+    list-style-type: none;
+    padding-bottom: 1rem;
 }
 
 /* holding page styles */
@@ -738,17 +760,36 @@ holding-text {
         /*16px*/
     }
 
+    body {
+        font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 2rem;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        background: #151414;
+        color: white;
+        cursor: url(images/icon/diamond-white.png), auto;
+    
+    }
+
+    p {
+        color: white;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
 
     h1 {
         margin-top: 0;
         font-size: 3.052rem;
+        line-height: 4rem;
         color: white;
     }
 
     h2 {
         font-size: 2.441rem;
-
-
     }
 
     h3 {
@@ -760,16 +801,17 @@ holding-text {
     }
 
     h5 {
-        font-size: 1.6rem;
+        font-size: 1.75rem;
         line-height: 2rem;
         margin: 0rem;
-        margin-bottom: 1.38rem;
+        margin-bottom: 1.3rem;
         color: white;
     }
 
     h6 {
         font-size: 1rem;
         font-weight: 500;
+        margin-top:0rem;
     }
 
     small,
@@ -801,6 +843,7 @@ holding-text {
 
     .project-item-image {
         flex: 1;
+        margin-top: 0rem;
 
     }
 
