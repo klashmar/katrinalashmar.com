@@ -10,9 +10,7 @@ html {
 *,
 *:before,
 *:after {
-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
+box-sizing: inherit;
     }
 
 
@@ -25,6 +23,7 @@ body {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     max-width: 100%;
     overflow-x: hidden;
+    position: absolute;
     margin: 2rem;
     font-weight: 300;
     line-height: 1.75rem;
