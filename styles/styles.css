@@ -747,7 +747,8 @@ holding-text {
     }
 
     h5 {
-        font-size: 1.25rem;
+        font-size: 1.6rem;
+        line-height: 2rem;
         margin: 0rem;
         margin-bottom: 1.38rem;
         color: white;
