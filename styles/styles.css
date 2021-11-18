@@ -10,8 +10,8 @@ html {
 *,
 *:before,
 *:after {
-box-sizing: inherit;
-    }
+    box-sizing: inherit;
+}
 
 
 html {
@@ -29,7 +29,7 @@ body {
     background: #151414;
     color: white;
     line-height: 1.5rem;
-    cursor:url(images/icon/diamond-white.png), auto;
+    cursor: url(images/icon/diamond-white.png), auto;
 
 }
 
@@ -61,7 +61,7 @@ h1 {
 
 h2 {
     font-size: 2.441rem;
-   
+
     margin-bottom: 0.5rem;
 
 }
@@ -76,8 +76,9 @@ h4 {
     font-size: 1.5rem;
     color: white;
 }
-h4:hover{
-    color:violet
+
+h4:hover {
+    color: violet
 }
 
 h5 {
@@ -131,7 +132,7 @@ a:hover {
 
 .nav {
     display: flex;
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
@@ -175,7 +176,7 @@ a:hover {
 .hero {
     color: white;
     overflow-x: hidden !important;
-    width:100% !important;
+    width: 100% !important;
     padding: 3em;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -190,6 +191,11 @@ a:hover {
 .hero-text {
     padding: 3em;
     color: white;
+}
+
+/* Added this wrapper to ticker to remove horizontal scrolling */
+.overflow-hidden {
+    overflow: hidden;
 }
 
 .ticker li {
@@ -260,11 +266,12 @@ padding: 2rem;
 
 
 .project-page-list {
-    display:flex;
-    flex-flow:column;
-    justify-content:center;
-    align-content:space-between;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: space-between;
 }
+
 /* .project-item {
     width: 100%;
     display: flex;
@@ -287,32 +294,36 @@ padding: 2rem;
     position: absolute;
     color: white;
 }
+
 .figure {
     padding: 0px;
-    margin:0px;
+    margin: 0px;
 }
-.figcaption{
-    color:white;
+
+.figcaption {
+    color: white;
     padding: 0px;
-    margin:0px;
+    margin: 0px;
 
 }
 
 .project-title-wrapper {
-    display: flex; 
+    display: flex;
     flex-direction: row;
     border: solid white 2px;
-    border-top:0px;
+    border-top: 0px;
     justify-content: space-between;
     align-items: center;
-padding-right: 2em;}
+    padding-right: 2em;
+}
 
 .project-title {
     box-sizing: content-box;
-    border-top:0px;
+    border-top: 0px;
     padding: 8px;
-    margin:0px;
+    margin: 0px;
 }
+
 /* 
 .project-title::after {
     content: url(images/icon/arrow-white.svg);
@@ -326,20 +337,21 @@ padding-right: 2em;}
 } */
 
 
-.categories-list{
+.categories-list {
     box-sizing: content-box;
     border: solid white 2px;
-    border-top:0px;
+    border-top: 0px;
     padding: 8px;
     margin-bottom: 5rem;
 }
-.category{
+
+.category {
     color: white;
 }
 
 .footer {
     min-height: 25vh;
-    margin-top:2rem;
+    margin-top: 2rem;
 }
 
 .footer-list {
@@ -484,7 +496,7 @@ holding-text {
     bottom: 0;
     left: 0;
     color: white;
-    background:#151414;
+    background: #151414;
     overflow: hidden;
     clip: rect(0, 900px, 0, 0);
     animation: noise-anim 2s infinite linear alternate-reverse;
@@ -653,16 +665,17 @@ holding-text {
             display: flex;
             float: left;
         } */
-        #logo {
-            min-width: 10vw;
-            max-width: 40vw;
-        }
+    #logo {
+        min-width: 10vw;
+        max-width: 40vw;
+    }
+
     .project-list {
         display: grid;
         grid-auto-columns: 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr;
-        gap: 0rem 3rem; 
+        gap: 0rem 3rem;
         grid-template-areas:
             "project-1 ."
             "project-1 ."
@@ -676,8 +689,8 @@ holding-text {
             "project-5 ."
             "project-5 .";
     }
-    
-      .project-1 {
+
+    .project-1 {
         grid-area: project-1;
     }
 
@@ -774,28 +787,31 @@ holding-text {
         margin-top: 2rem;
         justify-content: center;
     }
+
     .project-header {
-        flex:1;
+        flex: 1;
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
 
     .project-header-right {
-        flex:1;
+        flex: 1;
         padding-top: 2rem;
     }
 
     .project-item-image {
-        flex:1;
-        
+        flex: 1;
+
     }
+
     .project-item-image-alt {
-        flex:2;
-        
+        flex: 2;
+
     }
-   .project-paragraph {
-       list-style-type:none;
-       padding-bottom:1rem;
-   }
-    
+
+    .project-paragraph {
+        list-style-type: none;
+        padding-bottom: 1rem;
+    }
+
 }
