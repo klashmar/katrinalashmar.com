@@ -85,7 +85,7 @@ h4:hover {
 h5 {
     font-weight: 500;
     font-size: 1.9rem;
-    line-height: 2.3rem;
+    line-height: 2rem;
     margin-bottom: 1rem;
     color: white;
 }
@@ -798,11 +798,11 @@ holding-text {
     }
 
     h4 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 
     h5 {
-        font-size: 1.75rem;
+        font-size: 1.3rem;
         line-height: 2rem;
         margin: 0rem;
         margin-bottom: 1.3rem;
