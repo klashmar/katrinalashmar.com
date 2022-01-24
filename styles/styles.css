@@ -316,7 +316,7 @@ padding: 2rem;
     border-top: 0px;
     justify-content: space-between;
     align-items: center;
-    padding-right: 2em;
+    padding-right: 0.75em;
 }
 
 .project-title {
@@ -797,7 +797,7 @@ holding-text {
     }
 
     h4 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     h5 {
